@@ -23,7 +23,7 @@ def transcribe_audio(audio_data):
 
 def generate_chat_completion(messages):
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o",
         messages=messages,
         max_tokens=100,
         temperature=0.7
