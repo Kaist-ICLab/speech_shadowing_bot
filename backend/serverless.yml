@@ -1,0 +1,25 @@
+
+service: shadowing-service
+
+provider:
+  name: aws
+  runtime: python3.11
+  stage: dev
+  region: us-east-1
+
+package:
+  exclude:
+    - node_modules/**
+
+plugins:
+  - serverless-python-requirements
+
+functions:
+  chatgpt-audio-chatbot:
+    handler: handler.handler
+    timeout: 30
+    events:
+      - http:
+          path: get-answer
+          method: post
+          cors: true
