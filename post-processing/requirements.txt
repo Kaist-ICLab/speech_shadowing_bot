@@ -1,0 +1,10 @@
+pandas~=2.2.1
+pymongo~=4.6.2
+diff-match-patch
+scipy~=1.12.0
+numpy~=1.26.4
+matplotlib~=3.9.0
+scikit-learn~=1.5.0
+seaborn~=0.13.2
+pearsonr~=0.1.0
+openai~=1.35.3
